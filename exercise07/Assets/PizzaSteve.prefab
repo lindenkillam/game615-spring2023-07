@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2447280327064675279
+--- !u!1 &977149068815287674
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,8 +8,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4417509597584671638}
-  - component: {fileID: 8828017820225138034}
+  - component: {fileID: 1240704355028624675}
+  - component: {fileID: 6267481209731632071}
+  - component: {fileID: 1866372802936846013}
+  - component: {fileID: 1866372802936846012}
   m_Layer: 0
   m_Name: PizzaSteve
   m_TagString: Untagged
@@ -17,30 +19,30 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4417509597584671638
+--- !u!4 &1240704355028624675
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2447280327064675279}
+  m_GameObject: {fileID: 977149068815287674}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 4522240469774751582}
+  - {fileID: 1349885974124622315}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &8828017820225138034
+--- !u!95 &6267481209731632071
 Animator:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2447280327064675279}
+  m_GameObject: {fileID: 977149068815287674}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: acbad2e499fce32418808022d27254cd, type: 2}
@@ -53,12 +55,42 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!1001 &4127690629925613749
+--- !u!54 &1866372802936846013
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 977149068815287674}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!136 &1866372802936846012
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 977149068815287674}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.4
+  m_Height: 1.35
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.7, z: 0}
+--- !u!1001 &1527137372050265600
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 4417509597584671638}
+    m_TransformParent: {fileID: 1240704355028624675}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 5b566447ec3af4d76af72961dec6abe1, type: 3}
       propertyPath: m_RootOrder
@@ -110,8 +142,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b566447ec3af4d76af72961dec6abe1, type: 3}
---- !u!4 &4522240469774751582 stripped
+--- !u!4 &1349885974124622315 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5b566447ec3af4d76af72961dec6abe1, type: 3}
-  m_PrefabInstance: {fileID: 4127690629925613749}
+  m_PrefabInstance: {fileID: 1527137372050265600}
   m_PrefabAsset: {fileID: 0}
