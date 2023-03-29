@@ -2,16 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class pizza_steve : MonoBehaviour
 {
-    public PlayerController player;
-    public float moveSpeed = 10f;
-    public float rotateSpeed = 120f;
-
+    public Animator animator;
+    public string animationName = "Walk anim";
     // Start is called before the first frame update
     void Start()
     {
-        
+        animator.Play(animationName);
     }
 
     // Update is called once per frame
